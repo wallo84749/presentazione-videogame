@@ -1,0 +1,14 @@
+:root{
+    --colore-primario: #999100;
+    --font-size-base: 16px;
+    --colore-di-background: #281309;
+}
+
+.img-sistematore{
+    border-radius: 50%;
+}
+body {
+  color: var(--colore-primario);
+  font-size: var(--font-size-base);
+  background-color: var(--colore-di-background);
+}
