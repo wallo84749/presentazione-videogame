@@ -6,17 +6,17 @@
     <title>Shadow Ops - Preordine</title>
     <link href="./style.css" rel="stylesheet"></head>
 <body>
-    <header>
+    <header><!-- qua tutta la parte del header: la parte superiore della pagina-->
         <div>
             <img class="img-sistematore" src="img/immagine-di-uno-che-gioca-a-shadow-ops.webp" alt="Immagine del videogioco Shadow Ops">
-        </div>
+        </div><!--div lo possiamo usare per ogni parte del codice, un immgaine, un titolo o così via-->
         <div>
             <h1>PREORDINE</h1>
         </div>
-    </header>
+    </header> <!--chiusare header-->
     <hr>
     <nav>
-        <ul class="navbar">
+        <ul class="navbar"> <!--qua c'è la lista, che viene stailizzata dal css con la classe navbar-->
             <li><a href="PresentazioneDelGioco.html">Presentazione del gioco</a></li>
             <li><a href="schedaDeiPersonaggi.html">Schede dei personaggi</a></li>
             <li><a href="requisitiDiSistema.html">Requisiti di sistema</a></li>
@@ -29,7 +29,7 @@
             <h2>Edizioni disponibili</h2>
             <table>
                 <caption>Confronto tra le edizioni</caption>
-                <thead>
+                <thead><!--la tabella con le diverse cose-->
                     <tr>
                         <th>Edizione</th>
                         <th>Contenuto</th>
@@ -53,7 +53,7 @@
 
         <section>
             <h2>Preordina ora</h2>
-            <form action="grazie.html" method="get">
+            <form action="grazie.html" method="get"> <!--form per poter inserire noma email ed edizioni-->
                 <label for="nome">Nome e cognome</label>
                 <input type="text" name="nome" id="nome" required>
 
@@ -74,7 +74,7 @@
                     <input type="radio" name="piattaforma" id="pc" value="pc" checked>
                     <label for="pc">PC</label>
                 </div>
-                <div class="radio">
+                <div class="radio"> <!--bottone per dicere che piattafroma suare per giocare-->
                     <input type="radio" name="piattaforma" id="console" value="console">
                     <label for="console">Console</label>
                 </div>
@@ -90,7 +90,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Shadow Ops</p>
+        <p>&copy; 2026 Shadow Ops</p> <!--il footer: la parte inferiore della pagina-->
     </footer>
 </body>
 </html>
