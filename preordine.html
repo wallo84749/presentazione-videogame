@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Shadow Ops - Preordine</title>
+    <link href="./style.css" rel="stylesheet"></head>
 <body>
-    
+    <header>
+        <div>
+            <img class="img-sistematore" src="img/immagine-di-uno-che-gioca-a-shadow-ops.webp" alt="Immagine del videogioco Shadow Ops">
+        </div>
+        <div>
+            <h1>PREORDINE</h1>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <ul class="navbar">
+            <li><a href="PresentazioneDelGioco.html">Presentazione del gioco</a></li>
+            <li><a href="schedaDeiPersonaggi.html">Schede dei personaggi</a></li>
+            <li><a href="requisitiDiSistema.html">Requisiti di sistema</a></li>
+            <li><a href="domandeFrequenti.html">Domande frequenti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Edizioni disponibili</h2>
+            <table>
+                <caption>Confronto tra le edizioni</caption>
+                <thead>
+                    <tr>
+                        <th>Edizione</th>
+                        <th>Contenuto</th>
+                        <th>Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard</td>
+                        <td>Gioco base</td>
+                        <td>59,99 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe</td>
+                        <td>Gioco base, colonna sonora e mimetica esclusiva per Ghost</td>
+                        <td>79,99 &euro;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Preordina ora</h2>
+            <form action="grazie.html" method="get">
+                <label for="nome">Nome e cognome</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="edizione">Edizione</label>
+                <select name="edizione" id="edizione">
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                </select>
+
+                <label for="copie">Numero di copie</label>
+                <input type="number" name="copie" id="copie" min="1" max="5" value="1">
+
+                <p>Piattaforma</p>
+                <div class="radio">
+                    <input type="radio" name="piattaforma" id="pc" value="pc" checked>
+                    <label for="pc">PC</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="piattaforma" id="console" value="console">
+                    <label for="console">Console</label>
+                </div>
+
+                <label for="novita">
+                    <input type="checkbox" name="novita" id="novita">
+                    Voglio ricevere le novità sul gioco
+                </label>
+
+                <button type="submit">Invia preordine</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shadow Ops</p>
+    </footer>
 </body>
 </html>
